@@ -1,0 +1,18 @@
+.favAuthor {
+  background: green;
+  color: white;
+  page-break-inside: avoid;
+}
+
+.ticker {
+  background: grey;
+  color: white;
+}
+
+.favAuthorBox {
+  border: 5px solid green;
+}
+
+.tickerBox {
+  border: 5px solid grey;
+}

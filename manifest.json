@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Lichfilter - Lieblingsautoren",
+  "description": "Hervorheben von Lieblingsautoren auf deutschen Nachrichtenportalen.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*.zeit.de/*"],
+      "js": ["crawler.js","zeit.js"],
+      "css": ["main.css"],
+      "run_at": "document_end"
+    },
+    {
+      "matches": ["http://*.spiegel.de/*"],
+      "js": ["spiegel.js"],
+      "css": ["main.css"],
+      "run_at": "document_end"
+    }
+  ]
+}
